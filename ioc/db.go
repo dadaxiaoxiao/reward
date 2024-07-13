@@ -57,7 +57,7 @@ func (c *Callbacks) Initialize(db *gorm.DB) error {
 func newCallbacks() *Callbacks {
 	vector := promsdk.NewSummaryVec(promsdk.SummaryOpts{
 		Namespace: "qinye_yiyi",
-		Subsystem: "webook_reward",
+		Subsystem: "demo_reward",
 		Name:      "gorm_query_time",
 		Help:      "统计 GORM 执行时间",
 		ConstLabels: map[string]string{
