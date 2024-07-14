@@ -45,4 +45,4 @@ func InitApp() *customserver.App {
 
 // wire.go:
 
-var thirdPartyProvider = wire.NewSet(ioc.InitEtcdClient, ioc.InitOTEL, ioc.InitRedis, ioc.InitDB, ioc.InitLogger, ioc.InitPaymentGRPCClient, ioc.InitAccountGRPCClient, ioc.InitKafka, ioc.NewConsumers)
+var thirdPartyProvider = wire.NewSet(ioc.InitEtcdClient, ioc.InitRedis, ioc.InitDB, ioc.InitLogger, ioc.InitPaymentGRPCClient, ioc.InitAccountGRPCClient, ioc.InitKafka, ioc.NewConsumers)

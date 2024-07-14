@@ -16,7 +16,6 @@ import (
 
 var thirdPartyProvider = wire.NewSet(
 	ioc.InitEtcdClient,
-	ioc.InitOTEL,
 	ioc.InitRedis,
 	ioc.InitDB,
 	ioc.InitLogger,
